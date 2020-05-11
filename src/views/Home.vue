@@ -7,6 +7,8 @@
     <navigation></navigation>
     <friend-list></friend-list>
     <feed-list></feed-list>
+    <bottom-tabs></bottom-tabs>
+    <camera></camera>
   </div>
 </template>
 
@@ -16,12 +18,16 @@ import AppBar from '../components/AppBar'
 import Navigation from '../components/Navigation'
 import FriendList from '../components/FriendList'
 import FeedList from '../components/FeedList'
+import BottomTabs from '../components/BottomTabs'
+import Camera from '../components/Camera'
 export default {
   components: {
     AppBar,
     Navigation,
     FriendList,
-    FeedList
+    FeedList,
+    BottomTabs,
+    Camera
   },
   methods: {
     ...mapMutations(['toggleCamera'])
